@@ -1,27 +1,32 @@
 import React from 'react';
 import { View } from 'react-native';
 
-const Obstacles = ({obstacleLeft, obstacleWidth, obstacleHeight, gap}) => {
-
+const Obstacles = ({
+    color, 
+    obstacleLeft, 
+    obstacleWidth, 
+    obstacleHeight, 
+    gap,
+    randomBottom}) => {
 
     return(
         <>
             <View style={{
                 position: 'absolute',
-                backgroundColor: 'green',
-                width: obstacleHeight,
+                backgroundColor: color,
+                width: obstacleWidth,
                 height: obstacleHeight,
                 left :obstacleLeft,
-                bottom: 0 + obstacleHeight + gap,
+                bottom: randomBottom + obstacleHeight + gap,
             }}/> 
 
             <View style={{
                 position: 'absolute',
-                backgroundColor: 'green',
-                width: obstacleHeight,
+                backgroundColor: color,
+                width: obstacleWidth,
                 height: obstacleHeight,
                 left :obstacleLeft,
-                bottom: 0,
+                bottom: randomBottom,
             }}/>
         </>
     )

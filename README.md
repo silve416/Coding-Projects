@@ -1,2 +1,2 @@
 # Coding-Projects
- Local Codign Projects
+ Local Coding Projects

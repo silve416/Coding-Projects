@@ -35,7 +35,7 @@ import './index.css';
     //     squares: Array(9).fill(null), //How does squares: work? defining?
     //     xIsNext: true, //Why a comma?
     //   }
-    // } //This is commented out because Game will handle this now we "lited the state up" to Game
+    // } //This is commented out because Game will handle this now we "lifted the state up" to Game
 
     // handleClick(i){
     //   const squares = this.state.squares.slice(); //copies the squares array
